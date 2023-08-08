@@ -1,1 +1,11 @@
-# RearSensor_Arduino
+# RearSensor_Arduino  
+Arduino Uno와 초음파센서를 활용하여 자동차 후방센서를 구현한 프로젝트 
+
+## 동작시나리오
+초음파 센서가 인식하는 거리에 따라 3색의 LED가 점등되고 꺼진다.  
+
+### LED 색상
+- 5cm이하일 때 : 빨간색 
+- 5cm에서 10cm 사이일 때 : 녹색   
+- 10cm 이상일 때 : 파란색 
+
