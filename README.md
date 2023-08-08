@@ -10,4 +10,11 @@ Arduino Uno와 초음파센서를 활용하여 자동차 후방센서를 구현�
 
 ## 전원 공급
 - USB전원으로 아두이노를 통한 공급
-- 12V 전원 아답터를 이용한 공급 
+ 
+    <img width="50%" src="ArduinoPower.jpg">
+- 12V 전원 아답터를 이용한 공급
+   
+    <img width="50%" src="12VPower.jpg">
+
+
+  
