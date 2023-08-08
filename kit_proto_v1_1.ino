@@ -2,6 +2,7 @@
 LiquidCrystal_I2C lcd(0x27,16,2);  // (주소값, 16x2 디스플레이)
 int trig = 12;
 int echo = 13;
+int buzzer = 8;
 
 int LED_1 = 9;
 int LED_2 = 10;
@@ -32,7 +33,7 @@ void setup() {
   //pinMode(12, OUTPUT);
 
   /*buz핀 설정부분*/
-  pinMode(2, OUTPUT);
+  pinMode(buzzer, OUTPUT);
 }
 
 void loop(){
@@ -59,6 +60,14 @@ void loop(){
     digitalWrite(LED_2,HIGH);
     digitalWrite(LED_3,HIGH);
     delay(500);
+
+    // 부저
+
+    tone(buzzer, 131);
+    delay(1000);
+    noTone(buzzer);
+    delay(1000);
+
     lcd.clear();
   }
   else if (distance > 5 && distance <=10){ //5cm 초과 10cm 이하일 시
